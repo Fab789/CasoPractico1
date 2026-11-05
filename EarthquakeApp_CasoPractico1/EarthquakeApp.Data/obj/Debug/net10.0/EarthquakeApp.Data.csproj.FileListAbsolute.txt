@@ -1,0 +1,13 @@
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.csproj.AssemblyReference.cache
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.AssemblyInfoInputs.cache
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.AssemblyInfo.cs
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\bin\Debug\net10.0\EarthquakeApp.Data.deps.json
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\bin\Debug\net10.0\EarthquakeApp.Data.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\bin\Debug\net10.0\EarthquakeApp.Data.pdb
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\Earthqua.E12BA352.Up2Date
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\refint\EarthquakeApp.Data.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\EarthquakeApp.Data.pdb
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Data\obj\Debug\net10.0\ref\EarthquakeApp.Data.dll

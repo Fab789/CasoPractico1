@@ -1,0 +1,4 @@
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Web\wwwroot\js\site.js
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.Web\wwwroot\css\site.css
+wwwroot\css\site.css
+wwwroot\js\site.js

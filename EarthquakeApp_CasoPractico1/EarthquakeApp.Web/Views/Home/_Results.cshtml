@@ -1,0 +1,71 @@
+@model EarthquakeSearchResultDto
+@functions {
+    static string MagClass(double? m) => m switch
+    {
+        null => "mag-none",
+        < 5.5 => "mag-low",
+        < 6.5 => "mag-mid",
+        < 7.5 => "mag-high",
+        _ => "mag-severe"
+    };
+}
+@{
+    var c = Model.Country;
+}
+
+<aside class="country-panel" id="countryPanel">
+    <button type="button" class="panel-toggle" aria-label="Mostrar u ocultar información del país">⌃</button>
+    <div class="panel-body">
+        @if (!string.IsNullOrEmpty(c.FlagUrl))
+        {
+            <img class="flag" src="@c.FlagUrl" alt="Bandera de @c.CommonName" />
+        }
+        <h2>@c.CommonName</h2>
+        <p class="official">@c.OfficialName</p>
+        <dl>
+            <dt>Capital</dt><dd>@(string.IsNullOrEmpty(c.Capital) ? "—" : c.Capital)</dd>
+            <dt>Región</dt><dd>@c.Region @(string.IsNullOrEmpty(c.Subregion) ? "" : "· " + c.Subregion)</dd>
+            <dt>Población</dt><dd>@c.Population.ToString("N0")</dd>
+            <dt>Área</dt><dd>@c.Area.ToString("N0") km²</dd>
+            <dt>Idiomas</dt><dd>@(c.Languages.Count > 0 ? string.Join(", ", c.Languages) : "—")</dd>
+            <dt>Monedas</dt><dd>@(c.Currencies.Count > 0 ? string.Join(", ", c.Currencies) : "—")</dd>
+            <dt>Zonas horarias</dt><dd>@(c.Timezones.Count > 0 ? string.Join(", ", c.Timezones.Take(3)) : "—")</dd>
+        </dl>
+    </div>
+</aside>
+
+<section class="summary">
+    <div class="stat"><strong>@Model.TotalEarthquakes.ToString("N0")</strong><span>sismos registrados</span></div>
+    <div class="stat"><strong>@(Model.MaxMagnitude?.ToString("0.0") ?? "—")</strong><span>magnitud máxima</span></div>
+    <div class="stat"><strong>@(Model.AverageMagnitude?.ToString("0.0") ?? "—")</strong><span>magnitud promedio</span></div>
+</section>
+
+@if (Model.Earthquakes.Count == 0)
+{
+    <div class="empty">
+        <p>🎉 No hay sismos registrados para <strong>@c.CommonName</strong> en los datos cargados.</p>
+    </div>
+}
+else
+{
+    <h3 class="list-title">Sismos más recientes @(Model.TotalEarthquakes > Model.Earthquakes.Count ? $"(mostrando {Model.Earthquakes.Count} de {Model.TotalEarthquakes:N0})" : "")</h3>
+    <section class="quake-grid">
+        @foreach (var e in Model.Earthquakes)
+        {
+            <article class="quake-card">
+                <div class="mag @MagClass(e.Magnitude)">@(e.Magnitude?.ToString("0.0") ?? "?")</div>
+                <div class="quake-info">
+                    <h4>@e.Place</h4>
+                    <p class="meta">🕒 @e.TimeUtc.ToString("dd/MM/yyyy HH:mm") UTC</p>
+                    <p class="meta">📍 @e.Latitude.ToString("0.00"), @e.Longitude.ToString("0.00")
+                        @if (e.DepthKm.HasValue) { <text> · ⬇ @e.DepthKm.Value.ToString("0.0") km</text> }
+                    </p>
+                    @if (!string.IsNullOrEmpty(e.Url))
+                    {
+                        <a href="@e.Url" target="_blank" rel="noopener noreferrer">Ver detalle en USGS →</a>
+                    }
+                </div>
+            </article>
+        }
+    </section>
+}

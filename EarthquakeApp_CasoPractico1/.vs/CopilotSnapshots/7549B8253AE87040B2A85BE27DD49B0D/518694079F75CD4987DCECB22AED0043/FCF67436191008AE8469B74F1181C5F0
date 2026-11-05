@@ -1,0 +1,6 @@
+﻿# Copilot Instructions
+
+## Directrices del proyecto
+- CS1061 error with ToTable and EntityTypeBuilder: EntityTypeBuilder<Earthquake> no contiene una definición para ToTable.
+- CS1061 IndexBuilder<Earthquake> no contiene una definición para HasDatabaseName
+- Añadir using para EntityFrameworkCore si falta

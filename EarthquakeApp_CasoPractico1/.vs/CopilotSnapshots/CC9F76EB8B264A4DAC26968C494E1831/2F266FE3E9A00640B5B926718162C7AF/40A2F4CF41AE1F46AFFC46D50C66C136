@@ -1,0 +1,30 @@
+﻿using EarthquakeApp.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
+
+namespace EarthquakeApp.Data;
+
+public class EarthquakeDbContext : DbContext
+{
+    public EarthquakeDbContext(DbContextOptions<EarthquakeDbContext> options) : base(options) { }
+
+    public DbSet<Earthquake> Earthquakes => Set<Earthquake>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Earthquake>(e =>
+        {
+            object value = e.ToTable("Earthquakes");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.UsgsId).HasMaxLength(50).IsRequired();
+            e.Property(x => x.Place).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Country).HasMaxLength(150).IsRequired();
+            e.Property(x => x.Url).HasMaxLength(500);
+            e.Property(x => x.Title).HasMaxLength(500);
+            e.Property(x => x.Type).HasMaxLength(50);
+            e.HasIndex(x => x.UsgsId).IsUnique().HasDatabaseName("IX_Earthquakes_UsgsId");
+            e.HasIndex(x => x.Country).HasDatabaseName("IX_Earthquakes_Country");
+            e.HasIndex(x => x.TimeUtc).HasDatabaseName("IX_Earthquakes_TimeUtc");
+        });
+    }
+}

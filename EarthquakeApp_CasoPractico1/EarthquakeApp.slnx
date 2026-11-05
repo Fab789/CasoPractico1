@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="EarthquakeApp.Api/EarthquakeApp.Api.csproj" />
+  <Project Path="EarthquakeApp.Data/EarthquakeApp.Data.csproj" />
+  <Project Path="EarthquakeApp.DTO/EarthquakeApp.DTO.csproj" />
+  <Project Path="EarthquakeApp.Web/EarthquakeApp.Web.csproj" />
+</Solution>

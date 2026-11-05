@@ -1,0 +1,12 @@
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\bin\Debug\net10.0\EarthquakeApp.DTO.deps.json
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\bin\Debug\net10.0\EarthquakeApp.DTO.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\bin\Debug\net10.0\EarthquakeApp.DTO.pdb
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.AssemblyInfoInputs.cache
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.AssemblyInfo.cs
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\refint\EarthquakeApp.DTO.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\EarthquakeApp.DTO.pdb
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\ref\EarthquakeApp.DTO.dll
+C:\Users\Fabián\source\repos\EarthquakeApp\EarthquakeApp.DTO\obj\Debug\net10.0\Earthqua.2321D47E.Up2Date

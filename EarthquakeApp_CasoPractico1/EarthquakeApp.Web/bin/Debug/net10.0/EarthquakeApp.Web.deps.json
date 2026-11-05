@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "EarthquakeApp.Web/1.0.0": {
+        "dependencies": {
+          "EarthquakeApp.DTO": "1.0.0"
+        },
+        "runtime": {
+          "EarthquakeApp.Web.dll": {}
+        }
+      },
+      "EarthquakeApp.DTO/1.0.0": {
+        "runtime": {
+          "EarthquakeApp.DTO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EarthquakeApp.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EarthquakeApp.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
